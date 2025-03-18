@@ -205,7 +205,7 @@ const Catering = () => {
           ref={cartRef}
           onClick={() => setShowCartModel(!showCartModel)}
         >
-          <img src="/Assets/Vector.png" alt="cart" />
+          <img src="/Vector.png" alt="cart" />
           <span className={styles.cartCounter}>
             {cart.reduce((total, item) => total + item.quantity, 0)}
           </span>
@@ -220,7 +220,7 @@ const Catering = () => {
                   className={styles.closeButton}
                   onClick={() => setShowCartModel(false)}
                 >
-                  <img src="/Assets/cross-icon.png" alt="Close Cart" />
+                  <img src="/cross-icon.png" alt="Close Cart" />
                 </div>
                 <h1 className={styles.cartTopHeading}>
                   My Cart ({cart.length})
@@ -256,7 +256,7 @@ const Catering = () => {
                                 {item?.quantity == 1 ? (
                                   <img
                                     className={styles.trashimg}
-                                    src="/Assets/recycle-bin.png"
+                                    src="/recycle-bin.png"
                                     alt="decrement category"
                                   />
                                 ) : (
@@ -293,7 +293,7 @@ const Catering = () => {
                   className={styles.closeButton}
                   onClick={() => setShowCartModel(false)}
                 >
-                  <img src="/Assets/cross-icon.png" alt="Close Cart" />
+                  <img src="/cross-icon.png" alt="Close Cart" />
                 </div>
                 <h1 className={styles.emptyCart}>Cart is Empty</h1>
               </>

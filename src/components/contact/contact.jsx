@@ -16,7 +16,7 @@ export const ContactPage = () => {
           <div className="contactListCont">
             <p className="locationCont">
               <img
-                src="Assets/location.png"
+                src="/location.png"
                 alt=""
                 className="locton pr-1 mt-1"
               />{" "}
@@ -28,7 +28,7 @@ export const ContactPage = () => {
             </p>
             <p className="callCon">
               <img
-                src="Assets/phone.png"
+                src="/phone.png"
                 alt=""
               />
               <span>+46 701 75 65 65</span>
@@ -38,7 +38,7 @@ export const ContactPage = () => {
               info@mummus.se
             </p>
             <p className="VaraContainer">
-              <img src="Assets/time.png" alt=""  /> Våra
+              <img src="/time.png" alt=""  /> Våra
               öppettider finns <a href="https://g.co/kgs/T1pnvYw">här</a>
             </p>
             <h1 className="se homeHeadings" style={{ fontSize: "25px" }}>
@@ -48,27 +48,27 @@ export const ContactPage = () => {
             <div className="socialmedia pt-3">
               <a href="https://instagram.com/mummus.se?igshid=7toboeu31sp">
                 <img
-                  src="Assets/Instagram-green.png"
+                  src="/Instagram-green.png"
                   alt=""
                   className="mr-3 non-hover"
                 />
-                <img src="Assets/Instagram.png" alt="" className="mr-3 hover" />
+                <img src="/Instagram.png" alt="" className="mr-3 hover" />
               </a>
               <a href="https://www.facebook.com/Mummus-114979863593938/">
                 <img
-                  src="Assets/Facebook-green.png"
+                  src="/Facebook-green.png"
                   alt=""
                   className="mr-3 non-hover"
                 />
-                <img src="Assets/Facebook.png" alt="" className="mr-3 hover" />
+                <img src="/Facebook.png" alt="" className="mr-3 hover" />
               </a>
               <a href="mailto:info@mummus.se">
                 <img
-                  src="Assets/email-green.png"
+                  src="/email-green.png"
                   alt=""
                   className="mr-3 non-hover"
                 />
-                <img src="Assets/email.png" alt="" className="mr-3 hover" />
+                <img src="/email.png" alt="" className="mr-3 hover" />
               </a>
             </div>
           </div>

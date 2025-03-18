@@ -17,7 +17,7 @@ const Navbar = ({ children }) => {
       <div className="row m-0">
         <div className="col-12 p-0">
           <div>
-            <img src="Assets/top_banner_bg.png" className="w-100 banner_img" alt="" />
+            <img src="/top_banner_bg.png" className="w-100 banner_img" alt="" />
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@ const Navbar = ({ children }) => {
           <div className="col-12">
             <nav className="navbar navbar-expand-xl navbar-light">
               <Link to="/" className="navbar-brand">
-                <img src="Assets/logo.png" className="logo-img" alt="Logo" />
+                <img src="/logo.png" className="logo-img" alt="Logo" />
               </Link>
 
               <button
@@ -83,14 +83,14 @@ const Navbar = ({ children }) => {
                       aria-expanded="false"
                     >
                       <div className="se">
-                        <img src="Assets/swedish_flag.png" alt="" className="flag" />
+                        <img src="/swedish_flag.png" alt="" className="flag" />
                         <span className="d-inline-block px-2">Svenska</span>
-                        <img className="pr-2" src="Assets/drop_down.png" alt="" />
+                        <img className="pr-2" src="/drop_down.png" alt="" />
                       </div>
                       <div className="en">
                         <img src="https://ilunch.nu/public/public_site_assets/images/e-flag.png" alt="" className="flag" />
                         <span className="d-inline-block px-2">English</span>
-                        <img className="pr-2" src="Assets/drop_down.png" alt="" />
+                        <img className="pr-2" src="/drop_down.png" alt="" />
                       </div>
                     </button>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">

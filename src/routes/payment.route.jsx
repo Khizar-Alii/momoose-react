@@ -225,12 +225,12 @@ const PaymentRoute = () => {
                     {/* Card Icons */}
                     <div className={styles.cardIcons}>
                       <img
-                        src="/Assets/visa.png"
+                        src="/visa.png"
                         alt="Visa"
                         className={styles.cardIcon}
                       />
                       <img
-                        src="/Assets/express.png"
+                        src="/express.png"
                         alt="Card"
                         className={styles.cardIcon}
                       />
@@ -258,7 +258,7 @@ const PaymentRoute = () => {
                       />
                       {/* CVC Image */}
                       <img
-                        src="/Assets/Group.png"
+                        src="/Group.png"
                         alt="CVC"
                         className={styles.cvcImage}
                       />

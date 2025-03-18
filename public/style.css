@@ -119,7 +119,7 @@
   width: 50%;
 }
 .banner_1_se {
-  background-image: url(Assets/after_bg.png);
+  background-image: url(/after_bg.png);
   border-bottom: 2px solid black;
   background-repeat: no-repeat;
   background-size: 100% 130%;
@@ -140,7 +140,7 @@
     padding-bottom: 10px;
 }
 .banner_2_se {
-  background-image: url(Assets/after_bg.png);
+  background-image: url(/after_bg.png);
   border-bottom: 2px solid black;
   background-repeat: no-repeat;
   background-size: 100% 130%;
@@ -152,7 +152,7 @@
   max-width: max-content !important;
  }
 .banner-1 {
-  background-image: url(Assets/top_banner_bg.png);
+  background-image: url(/top_banner_bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,14 +175,14 @@
 }
 
 .banner_1_en {
-  background-image: url(Assets/after_bg.png);
+  background-image: url(/after_bg.png);
   border-bottom: 2px solid black;
   background-repeat: no-repeat;
   background-size: 100% 130%;
   /* padding-bottom: 15px; */
 }
 .banner_2_en {
-  background-image: url(Assets/after_bg.png);
+  background-image: url(/after_bg.png);
   border-bottom: 2px solid black;
   background-repeat: no-repeat;
   background-size: 100% 130%;
@@ -347,7 +347,7 @@ a:hover {
 /* footer css start */
 
 .footer {
-  background: url("Assets/footer bg.png");
+  background: url("/footerbg.png");
   height: 337px;
   background-size: 100% 100%;
   background-repeat: repeat;

@@ -3,269 +3,400 @@ import Footer from "../components/footer/footer";
 import { ContactPage } from "../components/contact/contact.jsx";
 import { Link } from "react-router-dom";
 
-
 const HomePage = () => {
   return (
     <div className="topContainer">
-       <div className="container-fluid p-0">
+      <div className="container-fluid p-0">
         <div className="d-xl-block d-none" id="section">
-            <div className="row m-0">
-                <div className="col-12 p-0">
-                    <div className="">
-                        <img src="Assets/top_banner_bg.png" className="w-100 banner_img" alt="" />
-                    </div>
-                </div>
+          <div className="row m-0">
+            <div className="col-12 p-0">
+              <div className="">
+                <img
+                  src="/top_banner_bg.png"
+                  className="w-100 banner_img"
+                  alt=""
+                />
+              </div>
             </div>
-            <div className="banner">
-                <div className="row">
-                    <div className="col-3 ml-auto">
-                        <img src="Assets/logo.png" className="imges" alt="" />
-                    </div>
-                    <div className="col-8 pr-lg-0">
-                        <nav className="navbar navbar-expand-xl navbar-light">
-                            <button className="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul className="navbar-nav m-auto" style={{display:'flex',alignItems:'center'}}>
-                                    <li className="nav-item ">
-                                        <a className="nav-link se text-light" href="#section">
-                                            <span>HEM</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        
-                                        <a className="nav-link se text-light" href="#section1">
-                                            <span>OM OSS</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item ">
-                                      
-                                        <a className="nav-link se text-light" href="#section2">
-                                            <span>MENY</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                      
-                                        <a className="nav-link se text-light" href="#section3">
-                                            <span>GALLERI</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item ">
-                                       
-                                        <a className="nav-link se text-light" href="#section4">
-                                            <span>KONTAKT</span>
-                                        </a>
-                                        
-                                    </li>
-                                    <button className="cateringmenubtn">
-                                        <Link to="/catering-menu">Catering Menu</Link>
-                                    </button>
-                                    
-                                 
-                                    <li className="nav-item dropdown ml-lg-3 ml-0">
-                                        
-                                        <button className="btn btn-light dropdown" id="navbarDropdown" role="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <div className="se">
-                                                <img src="Assets/swedish_flag.png" alt="" className="flag" />
-                                                <span className="d-inline-block px-2">Svenska</span>
-                                                <img className="pr-2" src="Assets/drop_down.png" alt="" />
-                                            </div>
-                                            <div className="en">
-                                                <img src="https://ilunch.nu/public/public_site_assets/images/e-flag.png"
-                                                    alt="" className="flag" />
-                                                <span className="d-inline-block px-2">English</span>
-                                                <img className="pr-2" src="Assets/drop_down.png" alt="" />
-                                            </div>
-                                        </button>
-                                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a className="dropdown-item" id="se" href="#se" title="">Svenska</a>
-                                            <a className="dropdown-item" id="en" href="#en">English</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-                <div className="container">
-                    <div className="row mt-5" id="section-2">
-                        <div className="col-md-5 mt-lg-5 mt-3">
-                            <h1 className="mb-4 en" style={{fontFamily:'belmonte',color:"#096e6c"}}>What is hummus?</h1>
-                            <h1 className="mb-4 se" style={{fontFamily:'belmonte',color:"#096e6c"}}>
-                                <img src="Assets/log-2.png" className="w-75"/>    
-                            </h1>
-                            <p className="pera en">Hummus is a savory, creamy, and yummy middle eastern dip.
-                                Hummus is traditionally made from mashed chickpeas mixed with fresh lemon juice,
-                                minced garlic, and a sesame paste called tahini. Hummus has become incredibly popular as
-                                a healthy dip or spread.
-                                At Mummus, we decided to take hummus to the next level!</p>
-                            <p className="pera se">Hummus är en krämig puré, tillverkad av mosade kikärtor blandad
-                                med färsk citronsaft, finhackad vitlök och tahini. Många känner till det som en
-                                nyttig dippröra eller ett härligt pålägg, men hos Mummus är hummus så mycket
-                                mer!
-                            </p>
-                            <a href="#section2" className="btn btn-primary bnt mt-lg-5 mt-2 en">View menu</a>
-                            <a href="#section2" className="btn btn-primary bnt mt-lg-5 mt-2 se">Vår meny </a>
-                        </div>
-                        <div className="col-md-6 mt-md-0 mt-3">
-                            <img src="Assets/top_banner_img.png" className="w-100 tob_banner_img" alt="" />
-                        </div>
+          </div>
+          <div className="banner">
+            <div className="row">
+              <div className="col-3 ml-auto">
+                <img src="/logo.png" className="imges" alt="" />
+              </div>
+              <div className="col-8 pr-lg-0">
+                <nav className="navbar navbar-expand-xl navbar-light">
+                  <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span className="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    className="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul
+                      className="navbar-nav m-auto"
+                      style={{ display: "flex", alignItems: "center" }}
+                    >
+                      <li className="nav-item ">
+                        <a className="nav-link se text-light" href="#section">
+                          <span>HEM</span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link se text-light" href="#section1">
+                          <span>OM OSS</span>
+                        </a>
+                      </li>
+                      <li className="nav-item ">
+                        <a className="nav-link se text-light" href="#section2">
+                          <span>MENY</span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link se text-light" href="#section3">
+                          <span>GALLERI</span>
+                        </a>
+                      </li>
+                      <li className="nav-item ">
+                        <a className="nav-link se text-light" href="#section4">
+                          <span>KONTAKT</span>
+                        </a>
+                      </li>
+                      <button className="cateringmenubtn">
+                        <Link to="/catering-menu">Catering Menu</Link>
+                      </button>
 
-                        <div className="col-md-1" id="myScrollspy">
-                            <ul className="nav nav-pills flex-column dot_slide">
-                                <li className="nav-item">
-                                    <a className="nav-link dot active" href="#section"></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link dot" href="#section1"></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link dot" href="#section2"></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link dot" href="#section3"></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link dot" href="#section4"></a>
-                                </li>
-                            </ul>
+                      <li className="nav-item dropdown ml-lg-3 ml-0">
+                        <button
+                          className="btn btn-light dropdown"
+                          id="navbarDropdown"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <div className="se">
+                            <img
+                              src="/swedish_flag.png"
+                              alt=""
+                              className="flag"
+                            />
+                            <span className="d-inline-block px-2">Svenska</span>
+                            <img className="pr-2" src="/drop_down.png" alt="" />
+                          </div>
+                          <div className="en">
+                            <img
+                              src="https://ilunch.nu/public/public_site_/images/e-flag.png"
+                              alt=""
+                              className="flag"
+                            />
+                            <span className="d-inline-block px-2">English</span>
+                            <img className="pr-2" src="/drop_down.png" alt="" />
+                          </div>
+                        </button>
+                        <div
+                          className="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <a
+                            className="dropdown-item"
+                            id="se"
+                            href="#se"
+                            title=""
+                          >
+                            Svenska
+                          </a>
+                          <a className="dropdown-item" id="en" href="#en">
+                            English
+                          </a>
                         </div>
-                    </div>
-                </div>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
             </div>
+            <div className="container">
+              <div className="row mt-5" id="section-2">
+                <div className="col-md-5 mt-lg-5 mt-3">
+                  <h1
+                    className="mb-4 en"
+                    style={{ fontFamily: "belmonte", color: "#096e6c" }}
+                  >
+                    What is hummus?
+                  </h1>
+                  <h1
+                    className="mb-4 se"
+                    style={{ fontFamily: "belmonte", color: "#096e6c" }}
+                  >
+                    <img src="/log-2.png" className="w-75" />
+                  </h1>
+                  <p className="pera en">
+                    Hummus is a savory, creamy, and yummy middle eastern dip.
+                    Hummus is traditionally made from mashed chickpeas mixed
+                    with fresh lemon juice, minced garlic, and a sesame paste
+                    called tahini. Hummus has become incredibly popular as a
+                    healthy dip or spread. At Mummus, we decided to take hummus
+                    to the next level!
+                  </p>
+                  <p className="pera se">
+                    Hummus är en krämig puré, tillverkad av mosade kikärtor
+                    blandad med färsk citronsaft, finhackad vitlök och tahini.
+                    Många känner till det som en nyttig dippröra eller ett
+                    härligt pålägg, men hos Mummus är hummus så mycket mer!
+                  </p>
+                  <a
+                    href="#section2"
+                    className="btn btn-primary bnt mt-lg-5 mt-2 en"
+                  >
+                    View menu
+                  </a>
+                  <a
+                    href="#section2"
+                    className="btn btn-primary bnt mt-lg-5 mt-2 se"
+                  >
+                    Vår meny{" "}
+                  </a>
+                </div>
+                <div className="col-md-6 mt-md-0 mt-3">
+                  <img
+                    src="/top_banner_img.png"
+                    className="w-100 tob_banner_img"
+                    alt=""
+                  />
+                </div>
+
+                <div className="col-md-1" id="myScrollspy">
+                  <ul className="nav nav-pills flex-column dot_slide">
+                    <li className="nav-item">
+                      <a className="nav-link dot active" href="#section"></a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link dot" href="#section1"></a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link dot" href="#section2"></a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link dot" href="#section3"></a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link dot" href="#section4"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="d-xl-none d-block" id="section">
-            <div className="banner-1">
-                <div className="row">
-                    <div className="col-12">
-                        <nav className="navbar navbar-expand-lg navbar-light">
-                            <a href="" className="navbar-brand">
-                                <img src="Assets/logo.png" className="w-100" alt="" />
-                            </a>
-                            <button className="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent1">
-                                <ul className="navbar-nav mr-auto text-right" style={{display:'flex',alignItems:'center'}}>
-                                    <li className="nav-item ">
-                                        <a className="nav-link en text-light" href="#section">
-                                            <span>Home</span>
-                                        </a>
-                                        <a className="nav-link se text-light" href="#section">
-                                            <span>HEM</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link en text-light" href="#section1">
-                                        <span>About</span>
-                                        </a>
-                                        <a className="nav-link se text-light" href="#section1">
-                                            <span>OM OSS</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item ">
-                                        <a className="nav-link en text-light" href="#section2">
-                                            <span>Menu</span>
-                                        </a>
-                                        <a className="nav-link se text-light" href="#section2">
-                                            <span>MENY</span>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link en text-light" href="#section3"><span>Gallery</span></a>
-                                        <a className="nav-link se text-light" href="#section3"><span>GALLERI</span></a>
-                                    </li>
-                                    <li className="nav-item ">
-                                        <a className="nav-link en text-light" href="#section4"><span>Contact</span></a>
-                                        <a className="nav-link se text-light" href="#section4"><span>KONTAKT</span></a>
-                                    </li><br/>
-                                    <button className="cateringmenubtn">
-                                        <a to="catering-menu">Catering Menu</a>
-                                    </button>
-                                    <li className="nav-item moblisticons" >
-                                        <a href="https://instagram.com/mummus.se?igshid=7toboeu31sp">
-                                            <i className="fa fa-instagram mr-lg-1 mr-0"></i>
-                                        </a>
-                                        <a href="https://www.facebook.com/Mummus-114979863593938/">
-                                            <i className="fa fa-facebook-f mr-lg-1 mr-0"></i>
-                                        </a>
-                                        <a href="mailto:info@mummus.se">
-                                            <i className="fa fa-envelope"></i>
-                                        </a>
-                                    </li>
-                                    <li className="nav-item dropdown ml-lg-3 ml-0 mt-lg-0 mt-2">
-                                        <button className="btn btn-light dropdown" id="navbarDropdown" role="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <div className="se" style={{display:"block"}}>
-                                                <img src="Assets/swedish_flag.png" alt="" className="flag" />
-                                                <span className="d-inline-block px-2">Svenska</span>
-                                                <img className="pr-2" src="Assets/drop_down.png" alt="" />
-                                            </div>
-                                            <div className="en" style={{display:"block"}}>
-                                                <img src="https://ilunch.nu/public/public_site_assets/images/e-flag.png"
-                                                    alt="" className="flag" />
-                                                <span className="d-inline-block px-2">English</span>
-                                                <img className="pr-2" src="Assets/drop_down.png" alt="" />
-                                            </div>
-                                        </button>
-                                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a className="dropdown-item" id="se1" href="#se1" title="">Svenska</a>
-                                            <a className="dropdown-item" id="en1" href="#en1">English</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-                <div className="container">
-                    <div className="row mt-5">
-                        <div className="col-lg-5 mt-lg-5 mt-3">
-                            <h1 className="mb-4 en" style={{fontFamily: 'belmonte', color:"#096e6c",}}>What is hummus?</h1>
-                            <h1 className="mb-4 se" style={{fontFamily: 'belmonte', color:"#096e6c",}}>
-                                <img src="Assets/log-2.png" className="w-75"/>    
-                            </h1>
-                            <p className="pera en">Hummus is a savory, creamy, and yummy middle eastern dip.
-                                Hummus is traditionally made from mashed chickpeas mixed with fresh lemon juice,
-                                minced garlic, and a sesame paste called tahini. Hummus has become incredibly popular as
-                                a healthy dip or spread.
-                                At Mummus, we decided to take hummus to the next level!</p>
-                            <p className="pera se">Hummus är en krämig puré, tillverkad av mosade kikärtor blandad
-                                med färsk citronsaft, finhackad vitlök och tahini. Många känner till det som en
-                                nyttig dippröra eller ett härligt pålägg, men hos Mummus är hummus så mycket
-                                mer!
-                            </p>
-                            <a href="#section2" className="btn btn-primary bnt mt-lg-5 mt-2 en">View menu</a>
-                            <a href="#section2" className="btn btn-primary bnt mt-lg-5 mt-2 se">Vår meny </a>
+          <div className="banner-1">
+            <div className="row">
+              <div className="col-12">
+                <nav className="navbar navbar-expand-lg navbar-light">
+                  <a href="" className="navbar-brand">
+                    <img src="/logo.png" className="w-100" alt="" />
+                  </a>
+                  <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span className="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    className="collapse navbar-collapse"
+                    id="navbarSupportedContent1"
+                  >
+                    <ul
+                      className="navbar-nav mr-auto text-right"
+                      style={{ display: "flex", alignItems: "center" }}
+                    >
+                      <li className="nav-item ">
+                        <a className="nav-link en text-light" href="#section">
+                          <span>Home</span>
+                        </a>
+                        <a className="nav-link se text-light" href="#section">
+                          <span>HEM</span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link en text-light" href="#section1">
+                          <span>About</span>
+                        </a>
+                        <a className="nav-link se text-light" href="#section1">
+                          <span>OM OSS</span>
+                        </a>
+                      </li>
+                      <li className="nav-item ">
+                        <a className="nav-link en text-light" href="#section2">
+                          <span>Menu</span>
+                        </a>
+                        <a className="nav-link se text-light" href="#section2">
+                          <span>MENY</span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link en text-light" href="#section3">
+                          <span>Gallery</span>
+                        </a>
+                        <a className="nav-link se text-light" href="#section3">
+                          <span>GALLERI</span>
+                        </a>
+                      </li>
+                      <li className="nav-item ">
+                        <a className="nav-link en text-light" href="#section4">
+                          <span>Contact</span>
+                        </a>
+                        <a className="nav-link se text-light" href="#section4">
+                          <span>KONTAKT</span>
+                        </a>
+                      </li>
+                      <br />
+                      <button className="cateringmenubtn">
+                        <a to="catering-menu">Catering Menu</a>
+                      </button>
+                      <li className="nav-item moblisticons">
+                        <a href="https://instagram.com/mummus.se?igshid=7toboeu31sp">
+                          <i className="fa fa-instagram mr-lg-1 mr-0"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Mummus-114979863593938/">
+                          <i className="fa fa-facebook-f mr-lg-1 mr-0"></i>
+                        </a>
+                        <a href="mailto:info@mummus.se">
+                          <i className="fa fa-envelope"></i>
+                        </a>
+                      </li>
+                      <li className="nav-item dropdown ml-lg-3 ml-0 mt-lg-0 mt-2">
+                        <button
+                          className="btn btn-light dropdown"
+                          id="navbarDropdown"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <div className="se" style={{ display: "block" }}>
+                            <img
+                              src="/swedish_flag.png"
+                              alt=""
+                              className="flag"
+                            />
+                            <span className="d-inline-block px-2">Svenska</span>
+                            <img className="pr-2" src="/drop_down.png" alt="" />
+                          </div>
+                          <div className="en" style={{ display: "block" }}>
+                            <img
+                              src="https://ilunch.nu/public/public_site_/images/e-flag.png"
+                              alt=""
+                              className="flag"
+                            />
+                            <span className="d-inline-block px-2">English</span>
+                            <img className="pr-2" src="/drop_down.png" alt="" />
+                          </div>
+                        </button>
+                        <div
+                          className="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <a
+                            className="dropdown-item"
+                            id="se1"
+                            href="#se1"
+                            title=""
+                          >
+                            Svenska
+                          </a>
+                          <a className="dropdown-item" id="en1" href="#en1">
+                            English
+                          </a>
                         </div>
-                        <div className="col-lg-6 mt-md-0 mt-3">
-                            <img src="Assets/top_banner_img.png" className="w-100 tob_banner_img" alt="" />
-                        </div>
-
-                        <div className="col-md-1">
-                            <div className="dot_slide" style={{textAlign:"center"}}>
-                                <span className="dot active" id="dot1"></span>
-                                <span className="dot" id="dot2"></span>
-                                <span className="dot" id="dot3"></span>
-                                <span className="dot" id="dot4"></span>
-                                <span className="dot" id="dot5"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
             </div>
-        </div>
-    </div>
+            <div className="container">
+              <div className="row mt-5">
+                <div className="col-lg-5 mt-lg-5 mt-3">
+                  <h1
+                    className="mb-4 en"
+                    style={{ fontFamily: "belmonte", color: "#096e6c" }}
+                  >
+                    What is hummus?
+                  </h1>
+                  <h1
+                    className="mb-4 se"
+                    style={{ fontFamily: "belmonte", color: "#096e6c" }}
+                  >
+                    <img src="/log-2.png" className="w-75" />
+                  </h1>
+                  <p className="pera en">
+                    Hummus is a savory, creamy, and yummy middle eastern dip.
+                    Hummus is traditionally made from mashed chickpeas mixed
+                    with fresh lemon juice, minced garlic, and a sesame paste
+                    called tahini. Hummus has become incredibly popular as a
+                    healthy dip or spread. At Mummus, we decided to take hummus
+                    to the next level!
+                  </p>
+                  <p className="pera se">
+                    Hummus är en krämig puré, tillverkad av mosade kikärtor
+                    blandad med färsk citronsaft, finhackad vitlök och tahini.
+                    Många känner till det som en nyttig dippröra eller ett
+                    härligt pålägg, men hos Mummus är hummus så mycket mer!
+                  </p>
+                  <a
+                    href="#section2"
+                    className="btn btn-primary bnt mt-lg-5 mt-2 en"
+                  >
+                    View menu
+                  </a>
+                  <a
+                    href="#section2"
+                    className="btn btn-primary bnt mt-lg-5 mt-2 se"
+                  >
+                    Vår meny{" "}
+                  </a>
+                </div>
+                <div className="col-lg-6 mt-md-0 mt-3">
+                  <img
+                    src="/top_banner_img.png"
+                    className="w-100 tob_banner_img"
+                    alt=""
+                  />
+                </div>
 
-    <div className="container">
+                <div className="col-md-1">
+                  <div className="dot_slide" style={{ textAlign: "center" }}>
+                    <span className="dot active" id="dot1"></span>
+                    <span className="dot" id="dot2"></span>
+                    <span className="dot" id="dot3"></span>
+                    <span className="dot" id="dot4"></span>
+                    <span className="dot" id="dot5"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
         <div className="p-4 shadow bg-white content" id="section1">
-            <div className="en text-center">
+          <div className="en text-center">
             <h1 className="mb-4">
               Welcome to <span>Mummus</span>
             </h1>
@@ -282,14 +413,14 @@ const HomePage = () => {
             </p>
           </div>
           <div className="se text-center">
-            <div className="row" >
+            <div className="row">
               <div className="col-md-6 m-auto">
-                <h1 className="mb-4" >
-                  <img src="Assets/log.png" className="w-100"  />
+                <h1 className="mb-4">
+                  <img src="/log.png" className="w-100" />
                 </h1>
               </div>
             </div>
-            
+
             <p className="font-16 pt-4 pb-4 par-we">
               Mycket har skrivits och sagts om hemligheten med hummus men vi
               tror inte att någon känner till den. Vi ser det bara som att det
@@ -306,7 +437,7 @@ const HomePage = () => {
 
         <div className="row m-0">
           <div className="col-lg-6 col-md-8 m-auto">
-            <img src="Assets/chickpeas_img.png" alt="" className="w-100 mt-4" />
+            <img src="/chickpeas_img.png" alt="" className="w-100 mt-4" />
           </div>
         </div>
         <div className="text-center" id="section2">
@@ -319,14 +450,10 @@ const HomePage = () => {
               fontFamily: "belmonte",
               color: "#096e6c",
               fontSize: "50px",
-              overflow : "hidden"
+              overflow: "hidden",
             }}
           >
-            <span
-            >
-              Vår
-            </span>{" "}
-            Meny
+            <span>Vår</span> Meny
           </h1>
         </div>
         <div className="mt-5 mb-5 text-center">
@@ -474,12 +601,12 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              {/* <img src="Assets/more_bg.png" className="w-100 en" alt="" />
-                    <img src="Assets/more_se_bg.PNG" className="w-100 se" alt="" /> */}
+              {/* <img src="/more_bg.png" className="w-100 en" alt="" />
+                    <img src="/more_se_bg.PNG" className="w-100 se" alt="" /> */}
             </div>
             <div className="col-lg-6 mt-xll-0 ">
-              {/* <img src="Assets/add_ons_bg.png" className="w-100 en" alt="" />
-                    <img src="Assets/add_one_se_bg.PNG" className="w-100 se" alt="" /> */}
+              {/* <img src="/add_ons_bg.png" className="w-100 en" alt="" />
+                    <img src="/add_one_se_bg.PNG" className="w-100 se" alt="" /> */}
 
               <div className="banner_2_se hh-100 se pt-5">
                 <div className="text-center">
@@ -615,18 +742,18 @@ const HomePage = () => {
           </div>
           <div className="row pt-5">
             <div className="col-md-2 col-6 mt-lg-0 mt-1">
-              <img src="Assets/menu-img-1.png" className="w-100" alt="" />
+              <img src="/menu-img-1.png" className="w-100" alt="" />
             </div>
             <div className="col-md-2 d-md-block d-none"></div>
             <div className="col-md-2 col-6 mt-lg-0 mt-1">
-              <img src="Assets/menu-img-2.png" className="w-100" alt="" />
+              <img src="/menu-img-2.png" className="w-100" alt="" />
             </div>
             <div className="col-md-2 col-6 mt-lg-0 mt-1">
-              <img src="Assets/menu-img-3.png" className="w-100" alt="" />
+              <img src="/menu-img-3.png" className="w-100" alt="" />
             </div>
             <div className="col-md-2 d-md-block d-none"></div>
             <div className="col-md-2 col-6 mt-lg-0 mt-1">
-              <img src="Assets/menu-img-4.png" className="w-100" alt="" />
+              <img src="/menu-img-4.png" className="w-100" alt="" />
             </div>
           </div>
           <div className="row">
@@ -727,8 +854,8 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              {/* <img src="Assets/section-1_bg.png " className="w-100 en" alt="" />
-                    <img src="Assets/section.png " className="w-100 se" alt="" />  */}
+              {/* <img src="/section-1_bg.png " className="w-100 en" alt="" />
+                    <img src="/section.png " className="w-100 se" alt="" />  */}
             </div>
             <div className="col-lg-6 mt-xll-0">
               <div className="banner_2_se hh-100 se pt-5">
@@ -833,8 +960,8 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              {/* <!-- <img src="Assets/section_bg.png " className="w-100 en" alt="">
-                    <img src="Assets/section-1.png" className="w-100 se" alt=""> --> */}
+              {/* <!-- <img src="/section_bg.png " className="w-100 en" alt="">
+                    <img src="/section-1.png" className="w-100 se" alt=""> --> */}
             </div>
           </div>
         </div>
@@ -856,184 +983,183 @@ const HomePage = () => {
             <div className="container gallery">
               <div className="row mb-15px">
                 <a
-                  href="Assets/food1.jpg"
+                  href="/food1.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food1.jpg" className="img-fluid rounded" />
+                  <img src="/food1.jpg" className="img-fluid rounded" />
                 </a>
                 <a
-                  href="Assets/food2.jpg"
+                  href="/food2.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food2.jpg" className="img-fluid rounded" />
+                  <img src="/food2.jpg" className="img-fluid rounded" />
                 </a>
                 <a
-                  href="Assets/food3.jpg"
+                  href="/food3.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food3.jpg" className="img-fluid rounded" />
+                  <img src="/food3.jpg" className="img-fluid rounded" />
                 </a>
                 <a
-                  href="Assets/food7.jpg"
+                  href="/food7.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food8.jpg" className="img-fluid rounded" />
-                </a>
-              </div>
-              <div className="row mb-15px">
-                <a
-                  href="Assets/food4.jpg"
-                  data-toggle="lightbox"
-                  data-gallery="gallery"
-                  className="col-md-3"
-                >
-                  <img src="Assets/food4.jpg" className="img-fluid rounded" />
-                </a>
-                <a
-                  href="Assets/food5.jpg"
-                  data-toggle="lightbox"
-                  data-gallery="gallery"
-                  className="col-md-3"
-                >
-                  <img src="Assets/food5.jpg" className="img-fluid rounded" />
-                </a>
-                <a
-                  href="Assets/food6.jpg"
-                  data-toggle="lightbox"
-                  data-gallery="gallery"
-                  className="col-md-3"
-                >
-                  <img src="Assets/food6.jpg" className="img-fluid rounded" />
-                </a>
-                <a
-                  href="Assets/food8.jpg"
-                  data-toggle="lightbox"
-                  data-gallery="gallery"
-                  className="col-md-3"
-                >
-                  <img src="Assets/food8.jpg" className="img-fluid rounded" />
+                  <img src="/food8.jpg" className="img-fluid rounded" />
                 </a>
               </div>
               <div className="row mb-15px">
                 <a
-                  href="Assets/food9.jpg"
+                  href="/food4.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food9.jpg" className="img-fluid rounded" />
+                  <img src="/food4.jpg" className="img-fluid rounded" />
                 </a>
                 <a
-                  href="Assets/food10.jpg"
+                  href="/food5.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food10.jpg" className="img-fluid rounded" />
+                  <img src="/food5.jpg" className="img-fluid rounded" />
                 </a>
                 <a
-                  href="Assets/food11.jpg"
+                  href="/food6.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food11.jpg" className="img-fluid rounded" />
+                  <img src="/food6.jpg" className="img-fluid rounded" />
                 </a>
                 <a
-                  href="Assets/food12.jpg"
+                  href="/food8.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food12.jpg" className="img-fluid rounded" />
-                </a>
-              </div>
-              <div className="row mb-15px">
-                <a
-                  href="Assets/food13.jpg"
-                  data-toggle="lightbox"
-                  data-gallery="gallery"
-                  className="col-md-3"
-                >
-                  <img src="Assets/food13.jpg" className="img-fluid rounded" />
-                </a>
-                <a
-                  href="Assets/food14.jpg"
-                  data-toggle="lightbox"
-                  data-gallery="gallery"
-                  className="col-md-3"
-                >
-                  <img src="Assets/food14.jpg" className="img-fluid rounded" />
-                </a>
-                <a
-                  href="Assets/food16.jpg"
-                  data-toggle="lightbox"
-                  data-gallery="gallery"
-                  className="col-md-3"
-                >
-                  <img src="Assets/food16.jpg" className="img-fluid rounded" />
-                </a>
-                <a
-                  href="Assets/food17.jpg"
-                  data-toggle="lightbox"
-                  data-gallery="gallery"
-                  className="col-md-3"
-                >
-                  <img src="Assets/food17.jpg" className="img-fluid rounded" />
+                  <img src="/food8.jpg" className="img-fluid rounded" />
                 </a>
               </div>
               <div className="row mb-15px">
                 <a
-                  href="Assets/food18.jpg"
+                  href="/food9.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food18.jpg" className="img-fluid rounded" />
+                  <img src="/food9.jpg" className="img-fluid rounded" />
                 </a>
                 <a
-                  href="Assets/food19.jpg"
+                  href="/food10.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food19.jpg" className="img-fluid rounded" />
+                  <img src="/food10.jpg" className="img-fluid rounded" />
                 </a>
                 <a
-                  href="Assets/food20.jpg"
+                  href="/food11.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food20.jpg" className="img-fluid rounded" />
+                  <img src="/food11.jpg" className="img-fluid rounded" />
                 </a>
                 <a
-                  href="Assets/food21.jpg"
+                  href="/food12.jpg"
                   data-toggle="lightbox"
                   data-gallery="gallery"
                   className="col-md-3"
                 >
-                  <img src="Assets/food21.jpg" className="img-fluid rounded" />
+                  <img src="/food12.jpg" className="img-fluid rounded" />
+                </a>
+              </div>
+              <div className="row mb-15px">
+                <a
+                  href="/food13.jpg"
+                  data-toggle="lightbox"
+                  data-gallery="gallery"
+                  className="col-md-3"
+                >
+                  <img src="/food13.jpg" className="img-fluid rounded" />
+                </a>
+                <a
+                  href="/food14.jpg"
+                  data-toggle="lightbox"
+                  data-gallery="gallery"
+                  className="col-md-3"
+                >
+                  <img src="/food14.jpg" className="img-fluid rounded" />
+                </a>
+                <a
+                  href="/food16.jpg"
+                  data-toggle="lightbox"
+                  data-gallery="gallery"
+                  className="col-md-3"
+                >
+                  <img src="/food16.jpg" className="img-fluid rounded" />
+                </a>
+                <a
+                  href="/food17.jpg"
+                  data-toggle="lightbox"
+                  data-gallery="gallery"
+                  className="col-md-3"
+                >
+                  <img src="/food17.jpg" className="img-fluid rounded" />
+                </a>
+              </div>
+              <div className="row mb-15px">
+                <a
+                  href="/food18.jpg"
+                  data-toggle="lightbox"
+                  data-gallery="gallery"
+                  className="col-md-3"
+                >
+                  <img src="/food18.jpg" className="img-fluid rounded" />
+                </a>
+                <a
+                  href="/food19.jpg"
+                  data-toggle="lightbox"
+                  data-gallery="gallery"
+                  className="col-md-3"
+                >
+                  <img src="/food19.jpg" className="img-fluid rounded" />
+                </a>
+                <a
+                  href="/food20.jpg"
+                  data-toggle="lightbox"
+                  data-gallery="gallery"
+                  className="col-md-3"
+                >
+                  <img src="/food20.jpg" className="img-fluid rounded" />
+                </a>
+                <a
+                  href="/food21.jpg"
+                  data-toggle="lightbox"
+                  data-gallery="gallery"
+                  className="col-md-3"
+                >
+                  <img src="/food21.jpg" className="img-fluid rounded" />
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-              <div id="section4">
-              <ContactPage />
-              </div>
+        <div id="section4">
+          <ContactPage />
+        </div>
       </div>
       <Footer />
-     
 
       <script type="text/javascript">
         {`
