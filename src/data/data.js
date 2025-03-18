@@ -6,7 +6,7 @@ export const categoryData = {
       id: 1,
       title: "Beduin - Tahini",
       location: "Lorem Ipsum Johar Town",
-      img: "/Assets/food1.jpg",
+      img: "/food1.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -53,7 +53,7 @@ export const categoryData = {
       id: 2,
       title: "Daredevil - Spicy",
       location: "Lorem Ipsum Johar Town",
-      img: "/Assets/food1.jpg",
+      img: "/food1.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -100,7 +100,7 @@ export const categoryData = {
       id: 3,
       title: "Bohemian - Beetroot",
       location: "Lorem Ipsum Johar Town",
-      img: "/Assets/food1.jpg",
+      img: "/food1.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -147,7 +147,7 @@ export const categoryData = {
       id: 4,
       title: "Genovese - pasta",
       location: "Lorem Ipsum Johar Town",
-      img: "/Assets/food1.jpg",
+      img: "/food1.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -194,7 +194,7 @@ export const categoryData = {
       id: 5,
       title: "Greek - Garlic & Yogurt",
       location: "Lorem Ipsum Johar Town",
-      img: "/Assets/food1.jpg",
+      img: "/food1.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -241,7 +241,7 @@ export const categoryData = {
       id: 6,
       title: "Hippie - whole chickpeas & Parsley",
       location: "Lorem Ipsum Johar Town",
-      img: "/Assets/food1.jpg",
+      img: "/food1.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -290,7 +290,7 @@ export const categoryData = {
       id: 7,
       title: "Chicken Wrap",
       location: "Lorem Ipsum DHA",
-      img: "/Assets/food2.jpg",
+      img: "/food2.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: ["pestohummus", "kycklingbröst", "sallad", "tomater", "basilika"],
@@ -301,7 +301,7 @@ export const categoryData = {
       id: 8,
       title: "Halloumi Wrap",
       location: "Lorem Ipsum Gulberg",
-      img: "/Assets/food3.jpg",
+      img: "/food3.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: ["beduinhummus", "korv", "ruccola", "stekt paprika", "rödlök"],
@@ -312,7 +312,7 @@ export const categoryData = {
       id: 9,
       title: "Sucuk Sausage wrap",
       location: "Lorem Ipsum Gulberg",
-      img: "/Assets/food3.jpg",
+      img: "/food3.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: ["rödbetshummus", "halloumi", "sallad", "inlagd gurka", "mynta"],
@@ -323,7 +323,7 @@ export const categoryData = {
       id: 10,
       title: "Falafel wrap",
       location: "Lorem Ipsum Gulberg",
-      img: "/Assets/food3.jpg",
+      img: "/food3.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -344,7 +344,7 @@ export const categoryData = {
       id: 11,
       title: "Shrimp Salad",
       location: "Lorem Ipsum Mall Road",
-      img: "/Assets/food4.jpg",
+      img: "/food4.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -362,7 +362,7 @@ export const categoryData = {
       id: 12,
       title: "Chicken Caesar Salad",
       location: "Lorem Ipsum Cantt",
-      img: "/Assets/food5.jpg",
+      img: "/food5.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -379,7 +379,7 @@ export const categoryData = {
       id: 13,
       title: "Rucuola & Feta Cheese Salad",
       location: "Lorem Ipsum Mall Road",
-      img: "/Assets/food4.jpg",
+      img: "/food4.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: ["fetaost", "rödlök", "oliver", "körsbärstomater", "ruccola"],
@@ -390,7 +390,7 @@ export const categoryData = {
       id: 14,
       title: "Pasta salad",
       location: "Lorem Ipsum Cantt",
-      img: "/Assets/food5.jpg",
+      img: "/food5.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -411,7 +411,7 @@ export const categoryData = {
       id: 15,
       title: "Labneh",
       location: "Lorem Ipsum Town",
-      img: "/Assets/food6.jpg",
+      img: "/food6.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       serving: "1 servings per person",
@@ -426,7 +426,7 @@ export const categoryData = {
       id: 16,
       title: "Olives",
       location: "Lorem Ipsum Center",
-      img: "/Assets/food7.jpg",
+      img: "/food7.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       serving: "1 servings per person",
@@ -443,7 +443,7 @@ export const categoryData = {
       id: 17,
       title: "Halva 130g",
       location: "Lorem Ipsum Town",
-      img: "/Assets/food6.jpg",
+      img: "/food6.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -458,7 +458,7 @@ export const categoryData = {
       id: 18,
       title: "Baklava 120g",
       location: "Lorem Ipsum Center",
-      img: "/Assets/food7.jpg",
+      img: "/food7.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -475,7 +475,7 @@ export const categoryData = {
       id: 19,
       title: "Beduin",
       location: "Lorem Ipsum Heights",
-      img: "/Assets/food10.jpg",
+      img: "/food10.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -507,7 +507,7 @@ export const categoryData = {
       id: 20,
       title: "Daredevil",
       location: "Lorem Ipsum Street",
-      img: "/Assets/food11.jpg",
+      img: "/food11.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -539,7 +539,7 @@ export const categoryData = {
       id: 21,
       title: "Bohemian",
       location: "Lorem Ipsum Heights",
-      img: "/Assets/food10.jpg",
+      img: "/food10.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -571,7 +571,7 @@ export const categoryData = {
       id: 22,
       title: "Pesto",
       location: "Lorem Ipsum Street",
-      img: "/Assets/food11.jpg",
+      img: "/food11.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -603,7 +603,7 @@ export const categoryData = {
       id: 23,
       title: "Greek",
       location: "Lorem Ipsum Heights",
-      img: "/Assets/food10.jpg",
+      img: "/food10.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
@@ -635,7 +635,7 @@ export const categoryData = {
       id: 24,
       title: "Hippie",
       location: "Lorem Ipsum Street",
-      img: "/Assets/food11.jpg",
+      img: "/food11.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto atque ipsum quasi et quos neque dolorum praesentium doloribus animi.",
       notes: [
