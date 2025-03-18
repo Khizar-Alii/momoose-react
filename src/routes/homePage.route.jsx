@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/footer/footer";
 import { ContactPage } from "../components/contact/contact.jsx";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="topContainer">
       <div className="container-fluid p-0">
@@ -206,6 +207,7 @@ const HomePage = () => {
                     <img src="/logo.png" className="w-100" alt="" />
                   </a>
                   <button
+                    onClick={() => setIsOpen(!isOpen)}
                     className="navbar-toggler"
                     type="button"
                     data-toggle="collapse"
@@ -225,58 +227,43 @@ const HomePage = () => {
                       style={{ display: "flex", alignItems: "center" }}
                     >
                       <li className="nav-item ">
-                        <a className="nav-link en text-light" href="#section">
-                          <span>Home</span>
-                        </a>
                         <a className="nav-link se text-light" href="#section">
                           <span>HEM</span>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link en text-light" href="#section1">
-                          <span>About</span>
-                        </a>
                         <a className="nav-link se text-light" href="#section1">
                           <span>OM OSS</span>
                         </a>
                       </li>
                       <li className="nav-item ">
-                        <a className="nav-link en text-light" href="#section2">
-                          <span>Menu</span>
-                        </a>
                         <a className="nav-link se text-light" href="#section2">
                           <span>MENY</span>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link en text-light" href="#section3">
-                          <span>Gallery</span>
-                        </a>
                         <a className="nav-link se text-light" href="#section3">
                           <span>GALLERI</span>
                         </a>
                       </li>
                       <li className="nav-item ">
-                        <a className="nav-link en text-light" href="#section4">
-                          <span>Contact</span>
-                        </a>
                         <a className="nav-link se text-light" href="#section4">
                           <span>KONTAKT</span>
                         </a>
                       </li>
                       <br />
                       <button className="cateringmenubtn">
-                        <a to="catering-menu">Catering Menu</a>
+                        <Link to="/catering-menu">Catering Menu</Link>
                       </button>
                       <li className="nav-item moblisticons">
                         <a href="https://instagram.com/mummus.se?igshid=7toboeu31sp">
-                          <i className="fa fa-instagram mr-lg-1 mr-0"></i>
+                          <img src="/Instagram.png" alt="" />
                         </a>
                         <a href="https://www.facebook.com/Mummus-114979863593938/">
-                          <i className="fa fa-facebook-f mr-lg-1 mr-0"></i>
+                          <img src="/Facebook.png" alt="" />
                         </a>
                         <a href="mailto:info@mummus.se">
-                          <i className="fa fa-envelope"></i>
+                          <img src="/email.png" alt="" />
                         </a>
                       </li>
                       <li className="nav-item dropdown ml-lg-3 ml-0 mt-lg-0 mt-2">
@@ -297,15 +284,7 @@ const HomePage = () => {
                             <span className="d-inline-block px-2">Svenska</span>
                             <img className="pr-2" src="/drop_down.png" alt="" />
                           </div>
-                          <div className="en" style={{ display: "block" }}>
-                            <img
-                              src="https://ilunch.nu/public/public_site_/images/e-flag.png"
-                              alt=""
-                              className="flag"
-                            />
-                            <span className="d-inline-block px-2">English</span>
-                            <img className="pr-2" src="/drop_down.png" alt="" />
-                          </div>
+                          
                         </button>
                         <div
                           className="dropdown-menu"
@@ -329,12 +308,16 @@ const HomePage = () => {
                 </nav>
               </div>
             </div>
-            <div className="container">
+            <div className={`container ${isOpen ? "navOpen" : ""}`}>
               <div className="row mt-5">
                 <div className="col-lg-5 mt-lg-5 mt-3">
                   <h1
                     className="mb-4 en"
-                    style={{ fontFamily: "belmonte", color: "#096e6c" }}
+                    style={{
+                      fontFamily: "belmonte",
+                      color: "#096e6c",
+                      paddingTop: "50px",
+                    }}
                   >
                     What is hummus?
                   </h1>
@@ -394,7 +377,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className={`container ${isOpen ? "navOpen" : ""}`}>
         <div className="p-4 shadow bg-white content" id="section1">
           <div className="en text-center">
             <h1 className="mb-4">
