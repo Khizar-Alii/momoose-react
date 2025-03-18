@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'belmonte';
-  src :url("Assets+Fonts+Colors/Fonts/Belmonte\ Rough_0.ttf");
+  src :url("/mainfonts/Belmonte\ Rough.ttf");
 }
 .dropdown-menu{
     min-width: 7.5rem !important;
