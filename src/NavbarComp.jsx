@@ -19,7 +19,7 @@ const NavbarComp = ({ isOpen, setIsOpen }) => {
     <nav className="navbar customNav">
       <div className="navbar-logo">
         <Link to={"/"}>
-          <img src="/Assets/logo.png" alt="Logo" />
+          <img src="/logo.png" alt="Logo" />
         </Link>
       </div>
 
@@ -49,13 +49,13 @@ const NavbarComp = ({ isOpen, setIsOpen }) => {
           <div className="language-selected">
             {language === "Svenska" ? (
               <div>
-                <img src="/Assets/ukimg.png" alt="langimg" />
+                <img src="/ukimg.png" alt="langimg" />
                 <p>English</p>
                 <MdKeyboardArrowDown />
               </div>
             ) : (
               <div>
-                <img src="/Assets/swedish_flag.png" alt="langimg" />
+                <img src="/swedish_flag.png" alt="langimg" />
                 <p>Svenska</p>
                 <MdKeyboardArrowDown />
               </div>
