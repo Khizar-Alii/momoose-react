@@ -1,6 +1,6 @@
 
 .footer {
-    background: url("Assets/footerbg.png");
+    background: url("/footerbg.png");
     height: 337px;
     background-size: 100% 100%;
     background-repeat: repeat;
