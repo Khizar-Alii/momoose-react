@@ -8,83 +8,83 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <div className="topContainer">
-       <div class="container-fluid p-0">
-        <div class="d-xl-block d-none" id="section">
-            <div class="row m-0">
-                <div class="col-12 p-0">
-                    <div class="">
-                        <img src="Assets/top_banner_bg.png" class="w-100 banner_img" alt="" />
+       <div className="container-fluid p-0">
+        <div className="d-xl-block d-none" id="section">
+            <div className="row m-0">
+                <div className="col-12 p-0">
+                    <div className="">
+                        <img src="Assets/top_banner_bg.png" className="w-100 banner_img" alt="" />
                     </div>
                 </div>
             </div>
-            <div class="banner">
-                <div class="row">
-                    <div class="col-3 ml-auto">
-                        <img src="Assets/logo.png" class="imges" alt="" />
+            <div className="banner">
+                <div className="row">
+                    <div className="col-3 ml-auto">
+                        <img src="Assets/logo.png" className="imges" alt="" />
                     </div>
-                    <div class="col-8 pr-lg-0">
-                        <nav class="navbar navbar-expand-xl navbar-light">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <div className="col-8 pr-lg-0">
+                        <nav className="navbar navbar-expand-xl navbar-light">
+                            <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav m-auto" style={{display:'flex',alignItems:'center'}}>
-                                    <li class="nav-item ">
-                                        <a class="nav-link se text-light" href="#section">
+                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul className="navbar-nav m-auto" style={{display:'flex',alignItems:'center'}}>
+                                    <li className="nav-item ">
+                                        <a className="nav-link se text-light" href="#section">
                                             <span>HEM</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li className="nav-item">
                                         
-                                        <a class="nav-link se text-light" href="#section1">
+                                        <a className="nav-link se text-light" href="#section1">
                                             <span>OM OSS</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item ">
+                                    <li className="nav-item ">
                                       
-                                        <a class="nav-link se text-light" href="#section2">
+                                        <a className="nav-link se text-light" href="#section2">
                                             <span>MENY</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li className="nav-item">
                                       
-                                        <a class="nav-link se text-light" href="#section3">
+                                        <a className="nav-link se text-light" href="#section3">
                                             <span>GALLERI</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item ">
+                                    <li className="nav-item ">
                                        
-                                        <a class="nav-link se text-light" href="#section4">
+                                        <a className="nav-link se text-light" href="#section4">
                                             <span>KONTAKT</span>
                                         </a>
                                         
                                     </li>
-                                    <button class="cateringmenubtn">
+                                    <button className="cateringmenubtn">
                                         <Link to="/catering-menu">Catering Menu</Link>
                                     </button>
                                     
                                  
-                                    <li class="nav-item dropdown ml-lg-3 ml-0">
+                                    <li className="nav-item dropdown ml-lg-3 ml-0">
                                         
-                                        <button class="btn btn-light dropdown" id="navbarDropdown" role="button"
+                                        <button className="btn btn-light dropdown" id="navbarDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <div class="se">
-                                                <img src="Assets/swedish_flag.png" alt="" class="flag" />
-                                                <span class="d-inline-block px-2">Svenska</span>
-                                                <img class="pr-2" src="Assets/drop_down.png" alt="" />
+                                            <div className="se">
+                                                <img src="Assets/swedish_flag.png" alt="" className="flag" />
+                                                <span className="d-inline-block px-2">Svenska</span>
+                                                <img className="pr-2" src="Assets/drop_down.png" alt="" />
                                             </div>
-                                            <div class="en">
+                                            <div className="en">
                                                 <img src="https://ilunch.nu/public/public_site_assets/images/e-flag.png"
-                                                    alt="" class="flag" />
-                                                <span class="d-inline-block px-2">English</span>
-                                                <img class="pr-2" src="Assets/drop_down.png" alt="" />
+                                                    alt="" className="flag" />
+                                                <span className="d-inline-block px-2">English</span>
+                                                <img className="pr-2" src="Assets/drop_down.png" alt="" />
                                             </div>
                                         </button>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" id="se" href="#se" title="">Svenska</a>
-                                            <a class="dropdown-item" id="en" href="#en">English</a>
+                                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a className="dropdown-item" id="se" href="#se" title="">Svenska</a>
+                                            <a className="dropdown-item" id="en" href="#en">English</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -92,46 +92,46 @@ const HomePage = () => {
                         </nav>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row mt-5" id="section-2">
-                        <div class="col-md-5 mt-lg-5 mt-3">
-                            <h1 class="mb-4 en" style={{fontFamily:'belmonte',color:"#096e6c"}}>What is hummus?</h1>
-                            <h1 class="mb-4 se" style={{fontFamily:'belmonte',color:"#096e6c"}}>
-                                <img src="Assets/log-2.png" class="w-75"/>    
+                <div className="container">
+                    <div className="row mt-5" id="section-2">
+                        <div className="col-md-5 mt-lg-5 mt-3">
+                            <h1 className="mb-4 en" style={{fontFamily:'belmonte',color:"#096e6c"}}>What is hummus?</h1>
+                            <h1 className="mb-4 se" style={{fontFamily:'belmonte',color:"#096e6c"}}>
+                                <img src="Assets/log-2.png" className="w-75"/>    
                             </h1>
-                            <p class="pera en">Hummus is a savory, creamy, and yummy middle eastern dip.
+                            <p className="pera en">Hummus is a savory, creamy, and yummy middle eastern dip.
                                 Hummus is traditionally made from mashed chickpeas mixed with fresh lemon juice,
                                 minced garlic, and a sesame paste called tahini. Hummus has become incredibly popular as
                                 a healthy dip or spread.
                                 At Mummus, we decided to take hummus to the next level!</p>
-                            <p class="pera se">Hummus är en krämig puré, tillverkad av mosade kikärtor blandad
+                            <p className="pera se">Hummus är en krämig puré, tillverkad av mosade kikärtor blandad
                                 med färsk citronsaft, finhackad vitlök och tahini. Många känner till det som en
                                 nyttig dippröra eller ett härligt pålägg, men hos Mummus är hummus så mycket
                                 mer!
                             </p>
-                            <a href="#section2" class="btn btn-primary bnt mt-lg-5 mt-2 en">View menu</a>
-                            <a href="#section2" class="btn btn-primary bnt mt-lg-5 mt-2 se">Vår meny </a>
+                            <a href="#section2" className="btn btn-primary bnt mt-lg-5 mt-2 en">View menu</a>
+                            <a href="#section2" className="btn btn-primary bnt mt-lg-5 mt-2 se">Vår meny </a>
                         </div>
-                        <div class="col-md-6 mt-md-0 mt-3">
-                            <img src="Assets/top_banner_img.png" class="w-100 tob_banner_img" alt="" />
+                        <div className="col-md-6 mt-md-0 mt-3">
+                            <img src="Assets/top_banner_img.png" className="w-100 tob_banner_img" alt="" />
                         </div>
 
-                        <div class="col-md-1" id="myScrollspy">
-                            <ul class="nav nav-pills flex-column dot_slide">
-                                <li class="nav-item">
-                                    <a class="nav-link dot active" href="#section"></a>
+                        <div className="col-md-1" id="myScrollspy">
+                            <ul className="nav nav-pills flex-column dot_slide">
+                                <li className="nav-item">
+                                    <a className="nav-link dot active" href="#section"></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link dot" href="#section1"></a>
+                                <li className="nav-item">
+                                    <a className="nav-link dot" href="#section1"></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link dot" href="#section2"></a>
+                                <li className="nav-item">
+                                    <a className="nav-link dot" href="#section2"></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link dot" href="#section3"></a>
+                                <li className="nav-item">
+                                    <a className="nav-link dot" href="#section3"></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link dot" href="#section4"></a>
+                                <li className="nav-item">
+                                    <a className="nav-link dot" href="#section4"></a>
                                 </li>
                             </ul>
                         </div>
@@ -139,85 +139,85 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
-        <div class="d-xl-none d-block" id="section">
-            <div class="banner-1">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <a href="" class="navbar-brand">
-                                <img src="Assets/logo.png" class="w-100" alt="" />
+        <div className="d-xl-none d-block" id="section">
+            <div className="banner-1">
+                <div className="row">
+                    <div className="col-12">
+                        <nav className="navbar navbar-expand-lg navbar-light">
+                            <a href="" className="navbar-brand">
+                                <img src="Assets/logo.png" className="w-100" alt="" />
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                                <ul class="navbar-nav mr-auto text-right" style={{display:'flex',alignItems:'center'}}>
-                                    <li class="nav-item ">
-                                        <a class="nav-link en text-light" href="#section">
+                            <div className="collapse navbar-collapse" id="navbarSupportedContent1">
+                                <ul className="navbar-nav mr-auto text-right" style={{display:'flex',alignItems:'center'}}>
+                                    <li className="nav-item ">
+                                        <a className="nav-link en text-light" href="#section">
                                             <span>Home</span>
                                         </a>
-                                        <a class="nav-link se text-light" href="#section">
+                                        <a className="nav-link se text-light" href="#section">
                                             <span>HEM</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link en text-light" href="#section1">
+                                    <li className="nav-item">
+                                        <a className="nav-link en text-light" href="#section1">
                                         <span>About</span>
                                         </a>
-                                        <a class="nav-link se text-light" href="#section1">
+                                        <a className="nav-link se text-light" href="#section1">
                                             <span>OM OSS</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link en text-light" href="#section2">
+                                    <li className="nav-item ">
+                                        <a className="nav-link en text-light" href="#section2">
                                             <span>Menu</span>
                                         </a>
-                                        <a class="nav-link se text-light" href="#section2">
+                                        <a className="nav-link se text-light" href="#section2">
                                             <span>MENY</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link en text-light" href="#section3"><span>Gallery</span></a>
-                                        <a class="nav-link se text-light" href="#section3"><span>GALLERI</span></a>
+                                    <li className="nav-item">
+                                        <a className="nav-link en text-light" href="#section3"><span>Gallery</span></a>
+                                        <a className="nav-link se text-light" href="#section3"><span>GALLERI</span></a>
                                     </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link en text-light" href="#section4"><span>Contact</span></a>
-                                        <a class="nav-link se text-light" href="#section4"><span>KONTAKT</span></a>
+                                    <li className="nav-item ">
+                                        <a className="nav-link en text-light" href="#section4"><span>Contact</span></a>
+                                        <a className="nav-link se text-light" href="#section4"><span>KONTAKT</span></a>
                                     </li><br/>
-                                    <button class="cateringmenubtn">
+                                    <button className="cateringmenubtn">
                                         <a to="catering-menu">Catering Menu</a>
                                     </button>
-                                    <li class="nav-item moblisticons" >
+                                    <li className="nav-item moblisticons" >
                                         <a href="https://instagram.com/mummus.se?igshid=7toboeu31sp">
-                                            <i class="fa fa-instagram mr-lg-1 mr-0"></i>
+                                            <i className="fa fa-instagram mr-lg-1 mr-0"></i>
                                         </a>
                                         <a href="https://www.facebook.com/Mummus-114979863593938/">
-                                            <i class="fa fa-facebook-f mr-lg-1 mr-0"></i>
+                                            <i className="fa fa-facebook-f mr-lg-1 mr-0"></i>
                                         </a>
                                         <a href="mailto:info@mummus.se">
-                                            <i class="fa fa-envelope"></i>
+                                            <i className="fa fa-envelope"></i>
                                         </a>
                                     </li>
-                                    <li class="nav-item dropdown ml-lg-3 ml-0 mt-lg-0 mt-2">
-                                        <button class="btn btn-light dropdown" id="navbarDropdown" role="button"
+                                    <li className="nav-item dropdown ml-lg-3 ml-0 mt-lg-0 mt-2">
+                                        <button className="btn btn-light dropdown" id="navbarDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <div class="se" style={{display:"block"}}>
-                                                <img src="Assets/swedish_flag.png" alt="" class="flag" />
-                                                <span class="d-inline-block px-2">Svenska</span>
-                                                <img class="pr-2" src="Assets/drop_down.png" alt="" />
+                                            <div className="se" style={{display:"block"}}>
+                                                <img src="Assets/swedish_flag.png" alt="" className="flag" />
+                                                <span className="d-inline-block px-2">Svenska</span>
+                                                <img className="pr-2" src="Assets/drop_down.png" alt="" />
                                             </div>
-                                            <div class="en" style={{display:"block"}}>
+                                            <div className="en" style={{display:"block"}}>
                                                 <img src="https://ilunch.nu/public/public_site_assets/images/e-flag.png"
-                                                    alt="" class="flag" />
-                                                <span class="d-inline-block px-2">English</span>
-                                                <img class="pr-2" src="Assets/drop_down.png" alt="" />
+                                                    alt="" className="flag" />
+                                                <span className="d-inline-block px-2">English</span>
+                                                <img className="pr-2" src="Assets/drop_down.png" alt="" />
                                             </div>
                                         </button>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" id="se1" href="#se1" title="">Svenska</a>
-                                            <a class="dropdown-item" id="en1" href="#en1">English</a>
+                                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a className="dropdown-item" id="se1" href="#se1" title="">Svenska</a>
+                                            <a className="dropdown-item" id="en1" href="#en1">English</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -225,37 +225,37 @@ const HomePage = () => {
                         </nav>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row mt-5">
-                        <div class="col-lg-5 mt-lg-5 mt-3">
-                            <h1 class="mb-4 en" style={{fontFamily: 'belmonte', color:"#096e6c",}}>What is hummus?</h1>
-                            <h1 class="mb-4 se" style={{fontFamily: 'belmonte', color:"#096e6c",}}>
-                                <img src="Assets/log-2.png" class="w-75"/>    
+                <div className="container">
+                    <div className="row mt-5">
+                        <div className="col-lg-5 mt-lg-5 mt-3">
+                            <h1 className="mb-4 en" style={{fontFamily: 'belmonte', color:"#096e6c",}}>What is hummus?</h1>
+                            <h1 className="mb-4 se" style={{fontFamily: 'belmonte', color:"#096e6c",}}>
+                                <img src="Assets/log-2.png" className="w-75"/>    
                             </h1>
-                            <p class="pera en">Hummus is a savory, creamy, and yummy middle eastern dip.
+                            <p className="pera en">Hummus is a savory, creamy, and yummy middle eastern dip.
                                 Hummus is traditionally made from mashed chickpeas mixed with fresh lemon juice,
                                 minced garlic, and a sesame paste called tahini. Hummus has become incredibly popular as
                                 a healthy dip or spread.
                                 At Mummus, we decided to take hummus to the next level!</p>
-                            <p class="pera se">Hummus är en krämig puré, tillverkad av mosade kikärtor blandad
+                            <p className="pera se">Hummus är en krämig puré, tillverkad av mosade kikärtor blandad
                                 med färsk citronsaft, finhackad vitlök och tahini. Många känner till det som en
                                 nyttig dippröra eller ett härligt pålägg, men hos Mummus är hummus så mycket
                                 mer!
                             </p>
-                            <a href="#section2" class="btn btn-primary bnt mt-lg-5 mt-2 en">View menu</a>
-                            <a href="#section2" class="btn btn-primary bnt mt-lg-5 mt-2 se">Vår meny </a>
+                            <a href="#section2" className="btn btn-primary bnt mt-lg-5 mt-2 en">View menu</a>
+                            <a href="#section2" className="btn btn-primary bnt mt-lg-5 mt-2 se">Vår meny </a>
                         </div>
-                        <div class="col-lg-6 mt-md-0 mt-3">
-                            <img src="Assets/top_banner_img.png" class="w-100 tob_banner_img" alt="" />
+                        <div className="col-lg-6 mt-md-0 mt-3">
+                            <img src="Assets/top_banner_img.png" className="w-100 tob_banner_img" alt="" />
                         </div>
 
-                        <div class="col-md-1">
-                            <div class="dot_slide" style={{textAlign:"center"}}>
-                                <span class="dot active" id="dot1"></span>
-                                <span class="dot" id="dot2"></span>
-                                <span class="dot" id="dot3"></span>
-                                <span class="dot" id="dot4"></span>
-                                <span class="dot" id="dot5"></span>
+                        <div className="col-md-1">
+                            <div className="dot_slide" style={{textAlign:"center"}}>
+                                <span className="dot active" id="dot1"></span>
+                                <span className="dot" id="dot2"></span>
+                                <span className="dot" id="dot3"></span>
+                                <span className="dot" id="dot4"></span>
+                                <span className="dot" id="dot5"></span>
                             </div>
                         </div>
                     </div>
@@ -264,9 +264,9 @@ const HomePage = () => {
         </div>
     </div>
 
-    <div class="container">
-        <div class="p-4 shadow bg-white content" id="section1">
-            <div class="en text-center">
+    <div className="container">
+        <div className="p-4 shadow bg-white content" id="section1">
+            <div className="en text-center">
             <h1 className="mb-4">
               Welcome to <span>Mummus</span>
             </h1>
