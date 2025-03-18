@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import NavbarComp from "../NavbarComp";
 import { ContactPage } from "../components/contact/contact";
 import Footer from "../components/footer/footer";
-import { FaCreditCard, FaCalendarAlt, FaLock } from "react-icons/fa"; // Icons for card, expiry, and CVC
 
 const PaymentRoute = () => {
   const [isOpen, setIsOpen] = useState(false);

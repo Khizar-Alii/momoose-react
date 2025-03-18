@@ -111,6 +111,7 @@
     flex-wrap: wrap;
     gap: 30px;
     padding: 10px 60px !important;
+    z-index: 2;
     margin-top: 20px;
 }
 
@@ -360,6 +361,7 @@
     cursor: pointer;
     padding: 10px;
     padding-left: 20px;
+    z-index: 999;
 }
 
 .cartCounter {
