@@ -1,5 +1,4 @@
 import React from "react";
-// import "../styles/homePage.css";
 import Footer from "../components/footer/footer";
 import { ContactPage } from "../components/contact/contact.jsx";
 import { Link } from "react-router-dom";
