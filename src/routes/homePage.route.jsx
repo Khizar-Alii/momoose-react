@@ -253,9 +253,9 @@ const HomePage = () => {
                       </li>
                       <br />
                       <button className="cateringmenubtn">
-                        <Link to="/catering-menu">Catering Menu</Link>
+                        <Link target="_blank" to="/catering-menu">Catering Menu</Link>
                       </button>
-                      <li className="nav-item moblisticons">
+                      <li className="nav-item moblisticons" style={{display : isOpen? "block" : "none"}} >
                         <a href="https://instagram.com/mummus.se?igshid=7toboeu31sp">
                           <img src="/Instagram.png" alt="" />
                         </a>
