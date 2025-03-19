@@ -96,6 +96,17 @@
     z-index: 1;
 }
 
+@media screen and (max-width:1278px) {
+    .moblisticons{
+        display: none !important;
+    }
+}
+@media screen and (max-width:991px) {
+    .moblisticons{
+        display: block !important;
+    }
+}
+
 
 .navOpen {
     padding-top: 350px;

@@ -255,7 +255,7 @@ const HomePage = () => {
                       <button className="cateringmenubtn">
                         <Link target="_blank" to="/catering-menu">Catering Menu</Link>
                       </button>
-                      <li className="nav-item moblisticons" style={{display : isOpen? "block" : "none"}} >
+                      {/* <li className="nav-item moblisticons" style={{display : isOpen? "block" : "none"}} >
                         <a href="https://instagram.com/mummus.se?igshid=7toboeu31sp">
                           <img src="/Instagram.png" alt="" />
                         </a>
@@ -265,7 +265,7 @@ const HomePage = () => {
                         <a href="mailto:info@mummus.se">
                           <img src="/email.png" alt="" />
                         </a>
-                      </li>
+                      </li> */}
                       <li className="nav-item dropdown ml-lg-3 ml-0 mt-lg-0 mt-2">
                         <button
                           className="btn btn-light dropdown"
