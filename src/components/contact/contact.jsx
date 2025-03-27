@@ -1,25 +1,28 @@
 import React from "react";
 import "./contact.css";
 import { MdEmail } from "react-icons/md";
+import { useLang } from "../../context/LangContext";
 
 export const ContactPage = () => {
+  const { language } = useLang();
   return (
     <div>
       <div className="contact-page">
         <div className="col-md-6 mt-5 ">
-          <h1 className="mb-4 en homeHeadings">
-            <span>Contact</span> Us
-          </h1>
-          <h1 className="mb-4 se homeHeadings">
-            <span>Kontakta </span> Oss
+          <h1 className="mb-4 homeHeadings">
+            {language === "en" ? (
+              <>
+                <span>Contact</span> Us
+              </>
+            ) : (
+              <>
+                <span>Kontakta </span> Oss
+              </>
+            )}
           </h1>
           <div className="contactListCont">
             <p className="locationCont">
-              <img
-                src="/location.png"
-                alt=""
-                className="locton pr-1 mt-1"
-              />{" "}
+              <img src="/location.png" alt="" className="locton pr-1 mt-1" />{" "}
               <span>
                 Klara Norra Kyrkogata 32
                 <br />
@@ -27,22 +30,26 @@ export const ContactPage = () => {
               </span>
             </p>
             <p className="callCon">
-              <img
-                src="/phone.png"
-                alt=""
-              />
+              <img src="/phone.png" alt="" />
               <span>+46 701 75 65 65</span>
             </p>
             <p className="mailCont">
               <MdEmail color="#00706E" />
               info@mummus.se
             </p>
-            <p className="VaraContainer">
-              <img src="/time.png" alt=""  /> Våra
-              öppettider finns <a href="https://g.co/kgs/T1pnvYw">här</a>
-            </p>
+            {language === "en" ? (
+              <p className="VaraContainer">
+                <img src="/time.png" alt="" /> Please check our opening hours
+                <a href="https://g.co/kgs/T1pnvYw">here</a>
+              </p>
+            ) : (
+              <p className="VaraContainer">
+                <img src="/time.png" alt="" /> Våra öppettider finns{" "}
+                <a href="https://g.co/kgs/T1pnvYw">här</a>
+              </p>
+            )}
             <h1 className="se homeHeadings" style={{ fontSize: "25px" }}>
-              Följ Oss{" "}
+              {language === "en" ? "Follow Us" : "Följ Oss"}
             </h1>
 
             <div className="socialmedia pt-3">
@@ -63,11 +70,7 @@ export const ContactPage = () => {
                 <img src="/Facebook.png" alt="" className="mr-3 hover" />
               </a>
               <a href="mailto:info@mummus.se">
-                <img
-                  src="/email-green.png"
-                  alt=""
-                  className="mr-3 non-hover"
-                />
+                <img src="/email-green.png" alt="" className="mr-3 non-hover" />
                 <img src="/email.png" alt="" className="mr-3 hover" />
               </a>
             </div>

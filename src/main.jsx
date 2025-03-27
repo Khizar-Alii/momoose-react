@@ -8,6 +8,7 @@ import HomePage from "./routes/homePage.route.jsx";
 import Catering from "./routes/catering.route.jsx";
 import AddInformation from "./routes/add-information.jsx";
 import PaymentRoute from "./routes/payment.route.jsx";
+import { LangProvider } from "./context/LangContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
-    <ToastContainer position="bottom-right" />
+    <LangProvider>
+      <RouterProvider router={router} />
+      <ToastContainer position="bottom-right" />
+    </LangProvider>
   </StrictMode>
 );

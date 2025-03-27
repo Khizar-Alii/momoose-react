@@ -7,17 +7,31 @@
     font-family: "Montserrat", sans-serif !important;
 }
 
+.momooseHeading {
+    font-family: belmonte !important;
+    color: #096e6c !important;
+}
+
 .homeHeadings {
-    font-family: belmonte;
-    color: #096e6c;
+    font-family: belmonte !important;
+    color: #096e6c !important;
     font-size: 50px;
     overflow: hidden;
     padding: 15px 0;
 }
-
-.homeHeadings span {
-    font-family: belmonte;
+.ourMenuHeading{
+    font-family: belmonte !important;
+    color: white;
+}
+.homeHeadings span,
+.welcomeToMomoose {
+    font-family: belmonte !important;
     color: #85c442;
+}
+
+
+.homeMenus span{
+    color: #00706E;
 }
 
 /* catering button */
