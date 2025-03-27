@@ -39,6 +39,33 @@ const PaymentRoute = () => {
   };
 
   const handleProceedWithPayment = () => {
+    // Regular expressions for validation
+    const cardNumberRegex = /^[0-9]{16}$/; // 16-digit card number
+    const expiryDateRegex = /^(0[1-9]|1[0-2])\/([0-9]{2})$/; // MM/YY format
+    const cvcRegex = /^[0-9]{3,4}$/; // 3 or 4 digit CVC
+
+    // Validation checks
+    if (!cardName.trim()) {
+      alert("Please enter the name on the card.");
+      return;
+    }
+
+    if (!cardNumberRegex.test(cardNumber.replace(/\s/g, ""))) {
+      alert("Please enter a valid 16-digit card number.");
+      return;
+    }
+
+    if (!expiryDateRegex.test(expiryDate)) {
+      alert("Please enter a valid expiry date in MM/YY format.");
+      return;
+    }
+
+    if (!cvcRegex.test(cvc)) {
+      alert("Please enter a valid CVC.");
+      return;
+    }
+
+    // If all fields are valid, proceed with payment
     const paymentDetails = {
       cardName,
       cardNumber,
@@ -46,9 +73,28 @@ const PaymentRoute = () => {
       cvc,
       isBillingSameAsShipping,
     };
+
     console.log("Payment Details:", paymentDetails);
-    // Add your API call or further logic here
+
+    // You can add API call logic here to process the payment
   };
+  const handleExpiryDateChange = (value) => {
+    // Remove any non-numeric characters except "/"
+    let formattedValue = value.replace(/\D/g, "");
+  
+    // Add "/" after two digits for month
+    if (formattedValue.length > 2) {
+      formattedValue = formattedValue.slice(0, 2) + "/" + formattedValue.slice(2);
+    }
+  
+    // Ensure max length is "MM/YY" (5 characters)
+    if (formattedValue.length > 5) {
+      formattedValue = formattedValue.slice(0, 5);
+    }
+  
+    setExpiryDate(formattedValue);
+  };
+  
 
   return (
     <>
@@ -220,6 +266,8 @@ const PaymentRoute = () => {
                       value={cardNumber}
                       onChange={(e) => setCardNumber(e.target.value)}
                       className={styles.cardInput}
+                      max={16}
+                      maxLength={16}
                     />
                     {/* Card Icons */}
                     <div className={styles.cardIcons}>
@@ -241,12 +289,14 @@ const PaymentRoute = () => {
                     <div className={styles.expiryDateContainer}>
                       <input
                         type="text"
-                        placeholder="MM : YY"
+                        placeholder="MM/YY"
                         value={expiryDate}
-                        onChange={(e) => setExpiryDate(e.target.value)}
+                        onChange={(e) => handleExpiryDateChange(e.target.value)}
                         className={styles.cardInput}
+                        maxLength={5} // Limit input to "MM/YY"
                       />
                     </div>
+
                     <div className={styles.cvcContainer}>
                       <input
                         type="text"
@@ -254,6 +304,7 @@ const PaymentRoute = () => {
                         value={cvc}
                         onChange={(e) => setCvc(e.target.value)}
                         className={styles.cardInput}
+                        maxLength={3}
                       />
                       {/* CVC Image */}
                       <img
