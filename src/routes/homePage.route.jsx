@@ -3,6 +3,7 @@ import Footer from "../components/footer/footer";
 import { ContactPage } from "../components/contact/contact.jsx";
 import { Link } from "react-router-dom";
 import { useLang } from "../context/LangContext.jsx";
+import Gallery from "../components/gallery/gallery.jsx";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -756,11 +757,7 @@ const HomePage = () => {
             </h1>
           </div>
 
-          <div className="col-12 text-center mt-5">
-            {/* <!-- <h1 className="en" ><span
-                        >Coming</span> Soon...</h1> -->
-                <!-- <h1 className="se" ><span
-                        >Kommer </span> Snart...</h1> --> */}
+          {/* <div className="col-12 text-center mt-5">
             <div className="container gallery">
               <div className="row mb-15px">
                 <a
@@ -933,7 +930,11 @@ const HomePage = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
+          <Gallery />
+
+
+
         </div>
 
         <div id="section4">
