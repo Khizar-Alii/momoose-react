@@ -3,17 +3,16 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./styles/navbarComp.css";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { useLang } from "./context/LangContext";
 
 const NavbarComp = ({ isOpen, setIsOpen }) => {
-  const [language, setLanguage] = useState("Svenska");
+    const { language, setLanguage } = useLang();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleLanguageChange = (lang) => {
-    setLanguage(lang);
-  };
+
 
   return (
     <nav className="navbar customNav">
@@ -27,19 +26,19 @@ const NavbarComp = ({ isOpen, setIsOpen }) => {
 
       <div className={`menuListz ${isOpen ? "active" : ""}`}>
         <Link to="/" onClick={() => setIsOpen(false)}>
-          Home
+          {language=== "en" ? "Home" : "HEM"}
         </Link>
         <Link to="/#section1" onClick={() => setIsOpen(false)}>
-          About
+          {language=== "en" ? "About" : "OM OSS"}
         </Link>
         <Link to="/#section2" onClick={() => setIsOpen(false)}>
-          Menu
+          {language=== "en" ? "Menu" : "MENY"}
         </Link>
         <Link to="/#section3" onClick={() => setIsOpen(false)}>
-          Gallery
+          {language=== "en" ?" Gallery" : "GALLERI"}
         </Link>
         <Link to="/#section4" onClick={() => setIsOpen(false)}>
-          Contact
+          {language=== "en" ?"Contact" : "KONTAKT"}
         </Link>
         <button className="cateringmenubtn">
           <Link to="/catering-menu">Catering Menu</Link>
@@ -47,7 +46,7 @@ const NavbarComp = ({ isOpen, setIsOpen }) => {
 
         <div className="language-dropdown">
           <div className="language-selected">
-            {language === "Svenska" ? (
+            {language === "en" ? (
               <div>
                 <img src="/ukimg.png" alt="langimg" />
                 <p>English</p>
@@ -62,8 +61,8 @@ const NavbarComp = ({ isOpen, setIsOpen }) => {
             )}
           </div>
           <div className="language-options">
-            <div onClick={() => handleLanguageChange("Svenska")}>Svenska</div>
-            <div onClick={() => handleLanguageChange("English")}>English</div>
+            <div onClick={() => setLanguage("sv")}>Svenska</div>
+            <div onClick={() => setLanguage("en")}>English</div>
           </div>
         </div>
       </div>

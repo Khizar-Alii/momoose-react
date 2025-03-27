@@ -93,13 +93,8 @@ const HomePage = () => {
                         >
                           {language === "en" ? (
                             <>
-                            
-                            <div>
-                                <img
-                                  src="/ukimg.png"
-                                  alt=""
-                                  className="flag"
-                                />
+                              <div>
+                                <img src="/ukimg.png" alt="" className="flag" />
                                 <span className="d-inline-block px-2">
                                   English
                                 </span>
