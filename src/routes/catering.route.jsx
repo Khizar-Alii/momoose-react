@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useMemo } from "react";
 import styles from "../styles/catering.module.css";
 import { categories, categoryData } from "../data/data";
 import Footer from "../components/footer/footer.jsx";
@@ -6,6 +6,8 @@ import { ContactPage } from "../components/contact/contact.jsx";
 import ButtonComp from "../components/button.jsx";
 import NavbarComp from "../NavbarComp.jsx";
 import { useNavigate } from "react-router-dom";
+import { useLang } from "../context/LangContext.jsx";
+
 const Catering = () => {
   const [activeCategory, setActiveCategory] = useState("Bowls");
   const [expandedCard, setExpandedCard] = useState(null);
@@ -16,13 +18,20 @@ const Catering = () => {
   const [selectedGrams, setSelectedGrams] = useState({});
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate()
+  const { language} = useLang();
+
+
 
   const handleProceedToCheckout = () =>{
       localStorage.setItem("cart", JSON.stringify(cart));
       navigate('/add-information')
   } 
 
-  const activeCategoryData = categoryData[activeCategory];
+  // const activeCategoryData = categoryData(language)[activeCategory];
+  const activeCategoryData = useMemo(() => {
+    return categoryData(language)[activeCategory];
+  }, [language, activeCategory]);
+
 
   const toggleCard = (id) => {
     setExpandedCard(expandedCard === id ? null : id);
